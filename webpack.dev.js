@@ -3,7 +3,7 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 const path = require('path');
 
-module.exports = merge(common, {
+module.exports = merge(common(), {
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     port: '8089',
